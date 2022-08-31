@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="./index.html" lang="en" class="logo">
+          <img src="./img/svg/AUTO-Logo.svg" />
+        </a>
+        <div class="desktop-menu">
+          <nav class="navigation">
+            <ul class="navigation_list">
+              <li class="list-item">
+                <a class="link active-link" href="#">Популярні авто</a>
+              </li>
+              <li class="list-item">
+                <a class="link" href="#">Автосалони</a>
+              </li>
+              <li class="list-item">
+                <a class="link" href="#">Тест-драйви</a>
+              </li>
+              <li class="list-item">
+                <a class="link" href="#">Скоро у продажу</a>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="button button_enter">Увійти</button>
+        </div>
+        <button type="button" class="button button_open-menu" data-menu-open>
+          Меню
+        </button>
+      </div>
+    </header>
+    <div class="mobile-menu is-closed" data-menu>
+      <div class="nav-close-button_wrap">
+        <button
+          type="button"
+          class="button button_link button_menu-close"
+          data-menu-close
+        >
+          Закрити меню
+        </button>
+        <nav class="navigation">
+          <ul class="navigation_list">
+            <li class="list-item">
+              <a class="link active-link" href="#">Популярні авто</a>
+            </li>
+            <li class="list-item">
+              <a class="link" href="#">Автосалони</a>
+            </li>
+            <li class="list-item">
+              <a class="link" href="#">Тест-драйви</a>
+            </li>
+            <li class="list-item">
+              <a class="link" href="#">Скоро у продажу</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button type="button" class="button button_link">Увійти</button>
+    </div>
+    <div class="section search">
+      <div class="container">
+        <form class="search-form">
+          <div class="input-wrap">
+            <input
+              class="input"
+              type="text"
+              name="search-bar"
+              placeholder="Пошук"
+            />
+            <div class="search-icon-wrap">
+              <img class="search-icon" src="./img/svg/i16_search_2px.svg" />
+            </div>
+          </div>
+          <button type="submit" class="button button_search">Знайти</button>
+        </form>
+      </div>
+    </div>
+    <div class="section car-gallery">
+      <div class="container">
+        <ul class="car-gallery_list">
+          <li class="list-item">
+            <p class="car-name">Hyundai Tucson</p>
+            <p class="car-model">Dynamic 1.6 CRDi 7DCT (136 к.с) 4WD</p>
+            <picture>
+              <source
+                srcset="./img/cars/car_1_desktop.jpg"
+                media="(min-width: 972px)"
+              />
+              <img
+                class="car-image"
+                src="./img/cars/car_1_mobile.jpg"
+                alt="Hyundai Tucson"
+              />
+            </picture>
+          </li>
+          <li class="list-item">
+            <p class="car-name">Nissan Qashqai</p>
+            <p class="car-model">Acenta 1.3 DIG-T Xtronic (150 к.с)</p>
+            <picture>
+              <source
+                srcset="./img/cars/car_2_desktop.jpg"
+                media="(min-width: 972px)"
+              />
+              <img
+                class="car-image"
+                src="./img/cars/car_2_mobile.jpg"
+                alt="Nissan Qashqai"
+              />
+            </picture>
+          </li>
+          <li class="list-item">
+            <p class="car-name">Volkswagen Touareg</p>
+
+            <p class="car-model">R-Line 3.0 TFSI AT (340 л.с.) AWD</p>
+            <picture>
+              <source
+                srcset="./img/cars/car_3_desktop.jpg"
+                media="(min-width: 972px)"
+              />
+              <img
+                class="car-image"
+                src="./img/cars/car_3_mobile.jpg"
+                alt="Volkswagen Touareg"
+              />
+            </picture>
+          </li>
+          <li class="list-item">
+            <p class="car-name">BMW X6</p>
+            <p class="car-model">Base 30d Stepotronic (265 л.с.) xDrive</p>
+            <picture>
+              <source
+                srcset="./img/cars/car_4_desktop.jpg"
+                media="(min-width: 972px)"
+              />
+              <img
+                class="car-image"
+                src="./img/cars/car_4_mobile.jpg"
+                alt="BMW X6"
+              />
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p class="copyrights">&copy; 2014-2022 RIA.com</p>
+        <p class="privacy-policy">Політика приватності</p>
+      </div>
+    </footer>
+    <div class="back-drop d-none" data-back-drop></div>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

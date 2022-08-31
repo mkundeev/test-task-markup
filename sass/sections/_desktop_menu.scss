@@ -1,0 +1,13 @@
+.desktop-menu {
+  margin-left: 53px;
+  @include flex(space-between, center);
+
+  .navigation_list {
+    @include flex(space-between, center);
+    flex-direction: row;
+    min-width: 570px;
+  }
+  .button_enter {
+    margin-left: 164px;
+  }
+}

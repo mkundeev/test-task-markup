@@ -1,0 +1,29 @@
+.header {
+  height: 63px;
+  border-bottom: 1px solid var(--grey-divider);
+
+  position: relative;
+  .container {
+    @include flex(space-between, center);
+    padding: 16px 24px 15px 16px;
+
+    @include break-point {
+      justify-content: normal;
+    }
+  }
+  .desktop-menu {
+    @media screen and (max-width: 971.9px) {
+      display: none;
+    }
+  }
+
+  .logo {
+    min-width: 108px;
+  }
+}
+
+.button_open-menu {
+  @include break-point {
+    display: none;
+  }
+}

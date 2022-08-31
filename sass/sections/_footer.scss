@@ -1,0 +1,15 @@
+.footer {
+  border-top: 1px solid var(--grey-divider);
+  .container {
+    @include flex(space-between, center);
+    @include font(14px, 400, 1.29);
+    padding-top: 22px;
+    padding-bottom: 23px;
+  }
+  @include break-point {
+    min-width: 972px;
+  }
+  .copyrights {
+    color: var(--grey-text);
+  }
+}

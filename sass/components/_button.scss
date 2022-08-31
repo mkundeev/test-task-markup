@@ -1,0 +1,10 @@
+.button {
+  @include font(16px, 400, 1.25);
+}
+.button_search {
+  background-color: var(--primary-color);
+  width: 100%;
+  border-radius: 8px;
+  color: var(--white-color);
+  height: 44px;
+}

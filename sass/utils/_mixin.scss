@@ -1,0 +1,17 @@
+@mixin font($fs, $fw, $lh) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin flex($jc, $ai) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin break-point {
+  @media screen and (min-width: 972px) {
+    @content;
+  }
+}

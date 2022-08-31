@@ -1,0 +1,9 @@
+.container {
+  padding: 32px 16px;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 360px;
+  @include break-point {
+    min-width: 972px;
+  }
+}

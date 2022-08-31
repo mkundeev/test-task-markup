@@ -1,0 +1,39 @@
+.search-form {
+  @include break-point {
+    @include flex(space-between, center);
+  }
+  .input-wrap {
+    position: relative;
+    margin-bottom: 16px;
+    @include break-point {
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+  }
+  .input {
+    width: 100%;
+    border: 2px solid var(--grey-text);
+    border-radius: 8px;
+    height: 44px;
+    padding-left: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    @include break-point {
+      width: 780px;
+    }
+  }
+  .input::placeholder {
+    color: var(--grey-text);
+  }
+  .search-icon {
+    position: absolute;
+    left: 16px;
+    transform: translateY(-50%);
+    top: 50%;
+  }
+  .button_search {
+    @include break-point {
+      width: 140px;
+    }
+  }
+}

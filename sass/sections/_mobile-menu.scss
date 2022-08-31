@@ -1,0 +1,32 @@
+.mobile-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 264px;
+  z-index: 2;
+
+  @include flex(space-between, flex-end);
+  flex-direction: column;
+  height: 100vh;
+  padding: 24px;
+  padding-top: 23px;
+  background-color: var(--white-color);
+
+  transition: right 300ms var(--time-function);
+
+  &.is-closed {
+    right: -264px;
+    transition: right 300ms var(--time-function);
+  }
+  @include break-point {
+    display: none;
+  }
+  .navigation_list {
+    .list-item:not(:last-child) {
+      margin-bottom: 48px;
+    }
+  }
+}
+.button_menu-close {
+  margin-bottom: 53px;
+}
